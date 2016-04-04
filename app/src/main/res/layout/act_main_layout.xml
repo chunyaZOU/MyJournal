@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:id="@+id/llParent"
+              tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp">
+
+
+        <EditText
+            style="@style/black_content_14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_search"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:gravity="center_vertical"
+            android:background="@drawable/et_search_bg"
+            android:id="@+id/etSearch"/>
+
+        <ImageView
+            android:id="@+id/imgClear"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/clear_search_gray"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line"/>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/lvJournal"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:headerDividersEnabled="true"
+        android:divider="@drawable/line"
+        android:footerDividersEnabled="true"
+        android:dividerHeight="0.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+    <!--<ListView
+        android:id="@+id/lvJournal"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_height="wrap_content">
+    </ListView>-->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/llNoData"
+        android:padding="@dimen/dimen_16dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/black_content_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data"
+            android:id="@+id/tvNoData"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/refresh"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

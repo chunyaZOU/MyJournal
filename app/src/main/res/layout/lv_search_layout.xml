@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <EditText
+        style="@style/black_content_14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_search"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/et_search_bg"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:id="@+id/etSearch"/>
+</LinearLayout>

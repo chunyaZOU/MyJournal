@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/et_search_bg"
+              android:padding="@dimen/dimen_8dp"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/month_style"
+            android:text="一月"
+            android:background="@drawable/mid_orange_month_bg"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:id="@+id/tvJanuary"/>
+
+        <TextView
+            android:id="@+id/tvFebruary"
+            android:background="@drawable/brown_month_bg"
+            android:text="二月"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:layout_marginLeft="@dimen/dimen_4dp"
+            style="@style/month_style"/>
+
+        <TextView
+            style="@style/month_style"
+            android:background="@drawable/light_blue_month_bg"
+            android:text="三月"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:layout_marginLeft="@dimen/dimen_4dp"
+            android:id="@+id/tvMarch"/>
+
+        <TextView
+            android:id="@+id/tvApril"
+            android:background="@drawable/deep_purple_month_bg"
+            android:text="四月"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:layout_marginLeft="@dimen/dimen_4dp"
+            style="@style/month_style"/>
+
+        <TextView
+            android:id="@+id/tvMay"
+            android:background="@drawable/orange_month_bg"
+            android:text="五月"
+            android:layout_marginLeft="@dimen/dimen_4dp"
+            style="@style/month_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/month_style"
+            android:text="六月"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:background="@drawable/cyan_month_bg"
+            android:id="@+id/tvJune"/>
+
+        <TextView
+            android:id="@+id/tvJuly"
+            android:background="@drawable/teal_month_bg"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:layout_marginLeft="@dimen/dimen_4dp"
+            android:text="七月"
+            style="@style/month_style"/>
+
+        <TextView
+            style="@style/month_style"
+            android:background="@drawable/yellow_month_bg"
+            android:text="八月"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:layout_marginLeft="@dimen/dimen_4dp"
+            android:id="@+id/tvAugust"/>
+
+        <TextView
+            android:id="@+id/tvSeptember"
+            android:text="九月"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:layout_marginLeft="@dimen/dimen_4dp"
+            android:background="@drawable/indigo_month_bg"
+            style="@style/month_style"/>
+
+        <TextView
+            android:id="@+id/tvOctober"
+            android:background="@drawable/light_green_month_bg"
+            android:text="十月"
+            android:layout_marginLeft="@dimen/dimen_4dp"
+            style="@style/month_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/month_style"
+            android:background="@drawable/blue_date_bg"
+            android:text="十一月"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:id="@+id/tvNovember"/>
+
+        <TextView
+            android:id="@+id/tvDecember"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:layout_marginLeft="@dimen/dimen_4dp"
+            android:background="@drawable/lime_month_bg"
+            android:text="十二月"
+            style="@style/month_style"/>
+
+        <TextView
+            android:id="@+id/tvSmile"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:layout_marginLeft="@dimen/dimen_4dp"
+            android:background="@drawable/smile_face"
+            style="@style/month_style"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4dp"
+            android:textColor="@color/white"
+            android:background="@drawable/corner_rect_bg_light_blue"
+            android:padding="@dimen/dimen_4dp"
+            android:gravity="center"
+            android:text="All"
+            android:id="@+id/tvAll"/>
+
+    </LinearLayout>
+
+</LinearLayout>

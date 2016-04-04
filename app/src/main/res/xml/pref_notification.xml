@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+    <PreferenceCategory
+        android:key="notification_category"
+        android:title="@string/pref_header_notifications">
+        <CheckBoxPreference
+            android:key="@string/pref_key_notifications"
+            android:title="@string/pref_title_notifications"
+            android:textStyle="normal"
+            android:textSize="@dimen/dimen_16dp"
+            android:textColor="@color/green_500"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <!--<PreferenceCategory
+        android:key="actionbar_categroy"
+        android:title="Theme">
+        <ListPreference
+            android:key="theme_list"
+            android:title="主题"
+            android:entries="@array/theme_entry"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="@string/def_theme"
+            android:summary="@string/summary_theme"
+            android:dialogTitle="主题"/>
+
+    </PreferenceCategory>-->
+
+</PreferenceScreen>

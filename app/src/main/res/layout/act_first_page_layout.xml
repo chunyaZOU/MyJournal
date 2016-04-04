@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/on_the_way2"
+                tools:context="com.example.h2601864.myjournal.act.ActFirstPage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:text="My Journal"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="28dp"
+        android:layout_above="@+id/tvSomeWords"
+        android:id="@+id/tvAppName"
+        android:textSize="24sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Life on the road, \nrecording bits and pieces"
+        android:id="@+id/tvSomeWords"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="@dimen/dimen_16dp"
+        android:paddingLeft="30dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="72dp"/>
+    <TextView
+        style="@style/white_content_14sp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="© Zou chunya"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
